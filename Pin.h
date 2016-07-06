@@ -11,6 +11,9 @@ enum PinMode { Input=0, Output=1, Blink=2 };
 class CPin
 {	
 public:	
+
+
+
 	
 	CPin(PinMode mode,string name,string text,int Adress);
 	
