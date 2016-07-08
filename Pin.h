@@ -1,12 +1,11 @@
-#ifndef MYHEADER_H
-#define MYHEADER_H
+#pragma once
 
 using namespace std;
 
 #include <string>
+#include <stdio.h>
 
-
-enum PinMode { Input=0, Output=1, Blink=2 };
+enum CPinMode { Input=0, Output=1, Blink=2 };
 
 class CPin
 {	
@@ -15,19 +14,18 @@ public:
 
 
 	
-	CPin(PinMode mode,string name,string text,int Adress);
+	CPin(CPinMode mode,string name,string text,int Adress);
 	
-	PinMode Mode();
+	CPinMode Mode();
 	string  Name();
 	string	Text();
 	int 	Adress();
 
 private:
 
-	PinMode m_Mode;
+	CPinMode m_Mode;
 	string  m_Name;
 	string	m_Text;
 	int 	m_Adress;
 };
 
-#endif

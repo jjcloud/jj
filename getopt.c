@@ -151,7 +151,7 @@ gcd(int a, int b)
 
 /*
  * Exchange the block from nonopt_start to nonopt_end with the block
- * from nonopt_end to opt_end (keeping the same order of arguments
+ * from nonopt_end to opt_end (keeCPing the same order of arguments
  * in each block).
  */
 static void
@@ -528,7 +528,7 @@ getopt(int nargc, char * const *nargv, const char *options)
 	 * the BSD getopt(3) (unlike GNU) has never done this.
 	 *
 	 * Furthermore, since many privileged programs call getopt()
-	 * before dropping privileges it makes sense to keep things
+	 * before dropCPing privileges it makes sense to keep things
 	 * as simple (and bug-free) as possible.
 	 */
 	return (getopt_internal(nargc, nargv, options, NULL, NULL, 0));

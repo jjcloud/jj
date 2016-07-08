@@ -8,39 +8,39 @@ using namespace std;
 #include <stdio.h>
 #include <map>
 
-#include "Pin.h"
+#include "pin.h"
 
 
 
 //--------------------------------
 
-CPin::CPin(PinMode mode,string name,string text,int adress)
+CPin::CPin(CPinMode mode,string name,string text,int adress)
 {
-	m_Mode 	 = mode;
-	m_Name	 = name;
-	m_Text 	 = text;
-	m_Adress = adress; 
+	this->m_Mode   = mode;
+	this->m_Name   = name;
+	this->m_Text   = text;
+	this->m_Adress = adress; 
 }	
 
 //--------------------------------
 
-PinMode CPin::Mode()
+CPinMode CPin::Mode()
 {
-	return m_Mode;
+	return this->m_Mode;
 }
 
 //--------------------------------
 
 string CPin::Name()
 {
-	return m_Name;
+	return this->m_Name;
 }
 
 //--------------------------------
 
 string	CPin::Text()
 {
-	return m_Text;
+	return this->m_Text;
 }
 
 //--------------------------------
